@@ -1,8 +1,8 @@
 export type SidebarElement = {
+  id: number;
   name: string;
   href: string;
   icon: any;
-  current: boolean;
 };
 
 export type UserElement = {

@@ -14,19 +14,19 @@ import pluginsIcon from '../assets/icons/plugin.svg';
 import walletIcon from '../assets/icons/wallet.svg';
 
 const SidebarNavigation: SidebarElement[] = [
-  { name: 'Home', href: '#', icon: homeIcon, current: true },
-  { name: 'Orders', href: '#', icon: ordersIcon, current: false },
-  { name: 'Products', href: '#', icon: productsIcon, current: false },
-  { name: 'Delivery', href: '#', icon: deliveryIcon, current: false },
-  { name: 'Marketing', href: '#', icon: marketingIcon, current: false },
-  { name: 'Analytics', href: '#', icon: analyticsIcon, current: false },
-  { name: 'Payments', href: '#', icon: paymentsIcon, current: false },
-  { name: 'Tools', href: '#', icon: toolsIcon, current: false },
-  { name: 'Discounts', href: '#', icon: discountsIcon, current: false },
-  { name: 'Audience', href: '#', icon: audienceIcon, current: false },
-  { name: 'Appearance', href: '#', icon: appearanceIcon, current: false },
-  { name: 'Plugins', href: '#', icon: pluginsIcon, current: false },
-  { name: 'Wallet', href: '#', icon: walletIcon, current: false },
+  { id: 1, name: 'Home', href: '#', icon: homeIcon },
+  { id: 2, name: 'Orders', href: '#', icon: ordersIcon },
+  { id: 3, name: 'Products', href: '#', icon: productsIcon },
+  { id: 4, name: 'Delivery', href: '#', icon: deliveryIcon },
+  { id: 5, name: 'Marketing', href: '#', icon: marketingIcon },
+  { id: 6, name: 'Analytics', href: '#', icon: analyticsIcon },
+  { id: 7, name: 'Payments', href: '#', icon: paymentsIcon },
+  { id: 8, name: 'Tools', href: '#', icon: toolsIcon },
+  { id: 9, name: 'Discounts', href: '#', icon: discountsIcon },
+  { id: 10, name: 'Audience', href: '#', icon: audienceIcon },
+  { id: 11, name: 'Appearance', href: '#', icon: appearanceIcon },
+  { id: 12, name: 'Plugins', href: '#', icon: pluginsIcon },
+  { id: 13, name: 'Wallet', href: '#', icon: walletIcon },
 ];
 
 const UserNavigation: UserElement[] = [
