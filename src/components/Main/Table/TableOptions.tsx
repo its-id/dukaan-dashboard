@@ -22,7 +22,7 @@ const TableOptions = () => {
         </div>
         <input
           id='search-field'
-          className='block bg-white w-[60] h-full pl-8 md:pl-10 px-2 md:px-4 md:py-2.5 text-sm md:text-base border-[#D9D9D9] rounded text-gray-900 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-0 focus:border-transparent'
+          className='block bg-white w-full md:w-[60] h-full pl-8 md:pl-10 px-2 md:px-4 md:py-2.5 text-sm md:text-base border-[#D9D9D9] rounded text-gray-900 placeholder-gray-500 focus:outline-[#1E2640] focus:placeholder-gray-400 focus:ring-0 focus:border-transparent'
           placeholder='Search by order ID..'
           type='search'
           name='search'
@@ -30,9 +30,13 @@ const TableOptions = () => {
       </div>
       <div className='flex-1 flex justify-end items-center gap-3'>
         <Menu as='div' className='relative'>
-          <Menu.Button className='bg-white border border-[#D9D9D9] rounded-md px-3 py-1.5 flex gap-1.5 items-center text-[#4D4D4D] hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E2640]'>
+          <Menu.Button className='bg-white border border-[#D9D9D9] rounded-md px-3 py-1.5 flex gap-1.5 items-center text-[#4D4D4D] text-sm md:text-base hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E2640]'>
             Sort
-            <img src={downUpArrowIcon} className='h-4 w-4' aria-hidden='true' />
+            <img
+              src={downUpArrowIcon}
+              className='h-3 md:h-4 w-3 md:w-4'
+              aria-hidden='true'
+            />
           </Menu.Button>
           <Menu.Items className='origin-top-right z-10 absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'>
             <div className='py-1'>
@@ -79,7 +83,11 @@ const TableOptions = () => {
           </Menu.Items>
         </Menu>
         <button className='w-9 h-9 self-stretch bg-white border border-[#D9D9D9] rounded-md flex justify-center items-center text-[#4D4D4D] hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E2640]'>
-          <img src={downloadIcon} className='h-5 w-5' aria-hidden='true' />
+          <img
+            src={downloadIcon}
+            className='h-4 md:h-5 w-4 md:w-5'
+            aria-hidden='true'
+          />
         </button>
       </div>
     </div>
