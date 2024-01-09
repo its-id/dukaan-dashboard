@@ -29,7 +29,7 @@ const Navbar = ({
         <span className='sr-only'>Open sidebar</span>
         <img src={hamburgerIcon} className='h-6 w-6' aria-hidden='true' />
       </button>
-      <div className='flex-1 px-4 flex gap-3 md:gap-4 justify-between md:justify-start'>
+      <div className='flex-1 flex gap-3 md:gap-4 justify-between md:justify-start'>
         <div className='md:flex-1 flex flex-row items-center gap-1 md:gap-4'>
           <p className='tex-sm md:text-base text-[#1A181E]'>Payments</p>
           <div className='flex items-center gap-1.5'>
