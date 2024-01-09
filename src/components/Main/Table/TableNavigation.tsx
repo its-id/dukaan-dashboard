@@ -11,7 +11,7 @@ const TableNavigation = () => {
 
   return (
     <nav className='mt-3 mx-auto flex items-center justify-between gap-6'>
-      <button className='flex-1 flex gap-1.5 justify-center items-center py-1.5 px-3 pr-4 bg-white border border-[#D9D9D9] rounded hover:text-gray-700 hover:border-gray-300'>
+      <button className='flex-1 flex gap-1.5 justify-center items-center py-1.5 px-3 pr-4 bg-white border border-[#D9D9D9] rounded hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E2640]'>
         <img src={chevronLeftIcon} className='h-4.5 w-4.5' aria-hidden='true' />
         <span className='text-sm text-[#4D4D4D] font-medium'>Previous</span>
       </button>
@@ -38,7 +38,7 @@ const TableNavigation = () => {
             )
           )}
       </div>
-      <button className='flex-1 flex gap-1.5 justify-center items-center py-1.5 pl-2 bg-white border border-[#D9D9D9] rounded hover:text-gray-700 hover:border-gray-300'>
+      <button className='flex-1 flex gap-1.5 justify-center items-center py-1.5 pl-2 bg-white border border-[#D9D9D9] rounded hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E2640]'>
         <span className='text-sm text-[#4D4D4D] font-medium'>Next</span>
         <img
           src={chevronRightIcon}

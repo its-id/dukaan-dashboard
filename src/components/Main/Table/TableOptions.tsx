@@ -22,7 +22,7 @@ const TableOptions = () => {
         </div>
         <input
           id='search-field'
-          className='block bg-white w-full md:w-[60] h-full pl-8 md:pl-10 px-2 md:px-4 md:py-2.5 text-sm md:text-base border-[#D9D9D9] rounded text-gray-900 placeholder-gray-500 focus:outline-[#1E2640] focus:placeholder-gray-400 focus:ring-0 focus:border-transparent'
+          className='block bg-white w-full md:w-[60] h-full pl-8 md:pl-10 px-2 md:px-4 md:py-2.5 text-sm md:text-base border-[#D9D9D9] rounded text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E2640] focus:placeholder-gray-400 focus:ring-0'
           placeholder='Search by order ID..'
           type='search'
           name='search'

@@ -39,12 +39,12 @@ const TableMain = ({ TableData: data }: { TableData: TableElement[] }) => {
                   </th>
                   <th
                     scope='col'
-                    className='px-6 py-2.5 flex justify-end items-center gap-2 text-sm font-medium text-[#4D4D4D] tracking-wider rounded-r'
+                    className='px-6 py-2.5 flex text-right justify-end items-center gap-2 text-sm font-medium text-[#4D4D4D] tracking-wider rounded-r'
                   >
                     <span>Transaction fees</span>
                     <img
                       src={helpIcon}
-                      className='w-3.5 h-3.5 cursor-pointer'
+                      className='hidden md:inline-block w-3.5 h-3.5 cursor-pointer'
                       alt='down-arrow'
                     />
                   </th>
