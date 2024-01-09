@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import chevronLeftIcon from '../../../assets/icons/chevron-left.svg';
 import chevronRightIcon from '../../../assets/icons/chevron-right.svg';
 import { useState } from 'react';
