@@ -1,4 +1,9 @@
-import { HeaderCardProps, SidebarElement, UserElement } from './types';
+import {
+  HeaderCardProps,
+  SidebarElement,
+  TableElement,
+  UserElement,
+} from './types';
 import homeIcon from '../assets/icons/home.svg';
 import ordersIcon from '../assets/icons/orders.svg';
 import productsIcon from '../assets/icons/products.svg';
@@ -46,4 +51,79 @@ const HeaderCardsData: HeaderCardProps[] = [
   },
 ];
 
-export { SidebarNavigation, UserNavigation, HeaderCardsData };
+const TableData: TableElement[] = [
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+  {
+    id: '#281209',
+    order_date: '7 July, 2023',
+    order_amount: '₹1,278.23',
+    fees: '₹22',
+  },
+];
+
+export { SidebarNavigation, UserNavigation, HeaderCardsData, TableData };

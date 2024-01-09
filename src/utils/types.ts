@@ -25,3 +25,10 @@ export type HeaderCardProps = {
   title: string;
   value: string | number;
 };
+
+export type TableElement = {
+  id: string | number;
+  order_date: string | number;
+  order_amount: string | number;
+  fees: string | number;
+};
