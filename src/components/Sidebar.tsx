@@ -117,7 +117,7 @@ const Sidebar = ({
                             item.id == current
                               ? 'text-white'
                               : 'text-white/80 hover:text-white',
-                            'h-6 w-6'
+                            'h-6 w-6 opacity-80'
                           )}
                           aria-hidden='true'
                         />
@@ -199,7 +199,7 @@ const Sidebar = ({
                       item.id === current
                         ? 'text-white'
                         : 'text-white/80 hover:text-white',
-                      'h-6 w-6'
+                      'h-6 w-6 opacity-80'
                     )}
                     aria-hidden='true'
                   />
