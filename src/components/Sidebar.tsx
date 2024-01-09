@@ -76,7 +76,7 @@ const Sidebar = ({
                 </div>
               </Transition.Child>
               <div className='flex-1 flex flex-col min-h-0 gap-6'>
-                <div className='flex items-center gap-3'>
+                <div className='flex items-center gap-3 px-2'>
                   <img
                     className='h-10 w-10 rounded'
                     src={logoImage}
@@ -93,7 +93,7 @@ const Sidebar = ({
                   </div>
                   <img
                     src={downArrowIcon}
-                    className='w-3 h-3 cursor-pointer'
+                    className='w-2.5 h-2.5 cursor-pointer'
                     alt='down-arrow'
                   />
                 </div>
@@ -107,7 +107,7 @@ const Sidebar = ({
                           item.id == current
                             ? 'bg-white/10 text-white'
                             : 'text-white/80 hover:text-white',
-                          'group flex items-center py-2 px-4 gap-3 rounded font-medium text-white'
+                          'group flex items-center py-2 px-4 gap-3 rounded font-medium text-white opacity-80'
                         )}
                         onClick={() => setCurrent(item.id)}
                       >
@@ -117,11 +117,11 @@ const Sidebar = ({
                             item.id == current
                               ? 'text-white'
                               : 'text-white/80 hover:text-white',
-                            'h-6 w-6 opacity-80'
+                            'h-5 w-5'
                           )}
                           aria-hidden='true'
                         />
-                        {item.name}
+                        <span className='text-sm'>{item.name}</span>
                       </Link>
                     ))}
                   </nav>
@@ -160,8 +160,8 @@ const Sidebar = ({
       <div className='hidden md:flex md:w-[224px] md:flex-col md:fixed md:inset-y-0 bg-[#1E2640] py-4 px-2.5'>
         {/* Sidebar component, swap this element with another sidebar if you like */}
         <div className='flex-1 flex flex-col min-h-0 gap-6'>
-          <div className='flex items-center gap-3'>
-            <img className='h-10 w-10 rounded' src={logoImage} alt='logo' />
+          <div className='flex items-center gap-3 px-2'>
+            <img className='h-11 w-10 rounded-md' src={logoImage} alt='logo' />
             <div className='flex flex-col justify-center gap-1 flex-1'>
               <span className='text-[15px] leading-[22px] font-md text-white'>
                 Nishyan
@@ -189,7 +189,7 @@ const Sidebar = ({
                     item.id === current
                       ? 'bg-white/10 text-white'
                       : 'text-white/80 hover:text-white',
-                    'group flex items-center py-2 px-4 gap-3 rounded font-medium text-white'
+                    'group flex items-center py-2 px-4 gap-3 rounded font-medium text-white opacity-80'
                   )}
                   onClick={() => setCurrent(item.id)}
                 >
@@ -199,11 +199,11 @@ const Sidebar = ({
                       item.id === current
                         ? 'text-white'
                         : 'text-white/80 hover:text-white',
-                      'h-6 w-6 opacity-80'
+                      'h-5 w-5'
                     )}
                     aria-hidden='true'
                   />
-                  {item.name}
+                  <span className='text-sm'>{item.name}</span>
                 </Link>
               ))}
             </nav>

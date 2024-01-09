@@ -16,7 +16,7 @@ const Dashboard = () => {
         setSidebarOpen={setSidebarOpen}
         SidebarNavigation={SidebarNavigation}
       />
-      <div className='md:pl-64 flex flex-col'>
+      <div className='md:pl-56 flex flex-col'>
         <Navbar
           setSidebarOpen={setSidebarOpen}
           UserNavigation={UserNavigation}
