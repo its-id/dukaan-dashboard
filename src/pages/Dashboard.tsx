@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { SidebarNavigation, UserNavigation } from '../utils/data';
 
 //component imports
-import { Navbar, Sidebar } from '../components';
+import { Navbar, Sidebar, Header, Main } from '../components';
 
 const Dashboard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -22,13 +22,9 @@ const Dashboard = () => {
           UserNavigation={UserNavigation}
         />
         <main className='flex-1'>
-          <div className='py-6'>
-            <div className='max-w-7xl mx-auto px-4 sm:px-6 md:px-8'>
-              <h1 className='text-2xl font-semibold text-gray-900'>
-                Dashboard
-              </h1>
-            </div>
-            <div className='max-w-7xl mx-auto px-4 sm:px-6 md:px-8'></div>
+          <div className='p-8 flex flex-col gap-8'>
+            <Header />
+            <Main />
           </div>
         </main>
       </div>

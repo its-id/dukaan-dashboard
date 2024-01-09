@@ -1,4 +1,4 @@
-import { SidebarElement, UserElement } from './types';
+import { HeaderCardProps, SidebarElement, UserElement } from './types';
 import homeIcon from '../assets/icons/home.svg';
 import ordersIcon from '../assets/icons/orders.svg';
 import productsIcon from '../assets/icons/products.svg';
@@ -35,4 +35,15 @@ const UserNavigation: UserElement[] = [
   { name: 'Sign out', href: '#' },
 ];
 
-export { SidebarNavigation, UserNavigation };
+const HeaderCardsData: HeaderCardProps[] = [
+  {
+    title: 'Online orders',
+    value: 231,
+  },
+  {
+    title: 'Amount received',
+    value: '₹23,92,312.19',
+  },
+];
+
+export { SidebarNavigation, UserNavigation, HeaderCardsData };

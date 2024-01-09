@@ -1,4 +1,7 @@
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
-export { Navbar, Sidebar };
+import Header from './Header/Header';
+import Main from './Main/Main';
+
+export { Navbar, Sidebar, Header, Main };

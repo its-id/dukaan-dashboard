@@ -29,16 +29,18 @@ const Navbar = ({
         <span className='sr-only'>Open sidebar</span>
         <img src={hamburgerIcon} className='h-6 w-6' aria-hidden='true' />
       </button>
-      <div className='flex-1 px-4 flex md:gap-4 justify-between md:justify-start'>
-        <div className='flex-1 flex items-center gap-4'>
-          <p className='text-[#1A181E]'>Payments</p>
+      <div className='flex-1 px-4 flex gap-3 md:gap-4 justify-between md:justify-start'>
+        <div className='md:flex-1 flex flex-row items-center gap-1 md:gap-4'>
+          <p className='tex-sm md:text-base text-[#1A181E]'>Payments</p>
           <div className='flex items-center gap-1.5'>
             <img
               src={helpOutlinedIcon}
               className='w-3.5 h-3.5'
               alt='help-outlined'
             />
-            <span className='text-xs text-[#4D4D4D]'>How it works</span>
+            <span className='hidden md:inline-block text-xs text-[#4D4D4D]'>
+              How it works
+            </span>
           </div>
         </div>
         <div className='flex-1 flex'>
@@ -48,11 +50,15 @@ const Navbar = ({
             </label>
             <div className='relative w-full text-gray-400 focus-within:text-gray-600'>
               <div className='absolute inset-y-0 left-4 flex items-center pointer-events-none'>
-                <img src={searchIcon} className='h-4 w-4' aria-hidden='true' />
+                <img
+                  src={searchIcon}
+                  className='h-3 md:h-4 w-3 md:w-4'
+                  aria-hidden='true'
+                />
               </div>
               <input
                 id='search-field'
-                className='block bg-[#F2F2F2] w-full h-full pl-10 px-4 py-2 border-transparent rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-0 focus:border-transparent sm:text-sm'
+                className='block bg-[#F2F2F2] w-full h-full pl-8 md:pl-10 px-2 md:px-4 md:py-2 text-sm md:text-base border-transparent rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-0 focus:border-transparent'
                 placeholder='Search for features, tutorials, etc.'
                 type='search'
                 name='search'
@@ -63,17 +69,25 @@ const Navbar = ({
         <div className='md:flex-1 flex items-center justify-end'>
           <button
             type='button'
-            className='bg-[#e6e6e6] w-10 h-10 flex items-center justify-center rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500'
+            className='bg-[#e6e6e6] w-7 md:w-10 h-7 md:h-10 flex items-center justify-center rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500'
           >
             <span className='sr-only'>View notifications</span>
-            <img src={hornIcon} className='h-4 w-4' aria-hidden='true' />
+            <img
+              src={hornIcon}
+              className='h-3 md:h-4 w-3 md:w-4'
+              aria-hidden='true'
+            />
           </button>
 
           {/* Profile dropdown */}
           <Menu as='div' className='ml-3 relative'>
-            <Menu.Button className='w-10 h-10 bg-[#E6E6E6] flex items-center justify-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600'>
+            <Menu.Button className='w-7 md:w-10 h-7 md:h-10  bg-[#E6E6E6] flex items-center justify-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600'>
               <span className='sr-only'>Open user menu</span>
-              <img className='h-4 w-4' src={downArrowIcon} alt='' />
+              <img
+                className='h-3 md:h-4 w-3 md:w-4'
+                src={downArrowIcon}
+                alt=''
+              />
             </Menu.Button>
             <Transition
               as={Fragment}

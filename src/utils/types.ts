@@ -20,3 +20,8 @@ export type NavbarProps = {
   UserNavigation: UserElement[];
   setSidebarOpen: (open: boolean) => void;
 };
+
+export type HeaderCardProps = {
+  title: string;
+  value: string | number;
+};
