@@ -1,7 +1,7 @@
 const Topbar = () => {
   return (
     <div className='flex justify-between items-center self-stretch'>
-      <p className='text-xl font-medium'>Overview</p>
+      <p className='text-xl font-medium text-[#1A181E]'>Overview</p>
       <select
         id='month'
         name='month'

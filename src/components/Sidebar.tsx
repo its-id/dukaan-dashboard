@@ -9,7 +9,7 @@ import { SidebarProps } from '../utils/types';
 import downArrowIcon from '../assets/icons/down-chevron.svg';
 import crossIcon from '../assets/icons/cross.svg';
 import walletIcon from '../assets/icons/wallet.svg';
-import logoImage from '../assets/images/logo.svg';
+import logoImage from '../assets/images/logo.png';
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ');
@@ -105,9 +105,9 @@ const Sidebar = ({
                         to={item.href}
                         className={classNames(
                           item.id == current
-                            ? 'bg-white/10 text-white'
+                            ? 'bg-white/10 text-white opacity-80'
                             : 'text-white/80 hover:text-white',
-                          'group flex items-center py-2 px-4 gap-3 rounded font-medium text-white opacity-80'
+                          'group flex items-center py-2 px-4 gap-3 rounded font-medium text-white'
                         )}
                         onClick={() => setCurrent(item.id)}
                       >
@@ -161,7 +161,13 @@ const Sidebar = ({
         {/* Sidebar component, swap this element with another sidebar if you like */}
         <div className='flex-1 flex flex-col min-h-0 gap-6'>
           <div className='flex items-center gap-3 px-2'>
-            <img className='h-11 w-10 rounded-md' src={logoImage} alt='logo' />
+            <div className='overflow-hidden w-10 h-10 rounded relative'>
+              <img
+                className='absolute w-full h-full object-cover'
+                src={logoImage}
+                alt='logo'
+              />
+            </div>
             <div className='flex flex-col justify-center gap-1 flex-1'>
               <span className='text-[15px] leading-[22px] font-md text-white'>
                 Nishyan
@@ -175,7 +181,7 @@ const Sidebar = ({
             </div>
             <img
               src={downArrowIcon}
-              className='w-4 h-4 cursor-pointer'
+              className='w-4.5 h-4.5 cursor-pointer'
               alt='down-arrow'
             />
           </div>
@@ -186,10 +192,10 @@ const Sidebar = ({
                   key={item.name}
                   to={item.href}
                   className={classNames(
-                    item.id === current
+                    item.id == current
                       ? 'bg-white/10 text-white'
                       : 'text-white/80 hover:text-white',
-                    'group flex items-center py-2 px-4 gap-3 rounded font-medium text-white opacity-80'
+                    'group flex items-center py-2 px-4 gap-3 rounded font-medium text-white'
                   )}
                   onClick={() => setCurrent(item.id)}
                 >

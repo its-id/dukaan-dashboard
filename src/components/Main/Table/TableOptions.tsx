@@ -16,13 +16,13 @@ const TableOptions = () => {
         <div className='absolute inset-y-0 left-4 flex items-center pointer-events-none'>
           <img
             src={searchIcon}
-            className='h-3 md:h-4 w-3 md:w-4'
+            className='h-3 md:h-3.5 w-3 md:w-3.5'
             aria-hidden='true'
           />
         </div>
         <input
           id='search-field'
-          className='block bg-white w-full md:w-[60] h-full pl-8 md:pl-10 px-2 md:px-4 md:py-2.5 text-sm md:text-base border-[#D9D9D9] rounded text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E2640] focus:placeholder-gray-400 focus:ring-0'
+          className='block bg-white w-full md:w-[248px] h-full pl-8 md:pl-10 px-2 md:px-4 md:py-2.5 text-sm border-[#D9D9D9] rounded text-gray-900 placeholder-[#999] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E2640] focus:placeholder-gray-400 focus:ring-0'
           placeholder='Search by order ID..'
           type='search'
           name='search'
@@ -30,7 +30,7 @@ const TableOptions = () => {
       </div>
       <div className='flex-1 flex justify-end items-center gap-3'>
         <Menu as='div' className='relative'>
-          <Menu.Button className='bg-white border border-[#D9D9D9] rounded-md px-3 py-1.5 flex gap-1.5 items-center text-[#4D4D4D] text-sm md:text-base hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E2640]'>
+          <Menu.Button className='bg-white border border-[#D9D9D9] rounded-md px-3 py-1.5 flex gap-1.5 items-center text-[#4D4D4D] text-sm md:text-base hover:bg-gray-50 ring-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E2640]'>
             Sort
             <img
               src={downUpArrowIcon}
