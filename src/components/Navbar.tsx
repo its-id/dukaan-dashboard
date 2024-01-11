@@ -23,13 +23,13 @@ const Navbar = ({
     <div className='sticky top-0 z-10 flex-shrink-0 flex bg-white py-3 md:px-8 border-b border-[#D9D9D9]'>
       <button
         type='button'
-        className='px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden'
+        className='px-2 pr-3 md:px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden'
         onClick={() => setSidebarOpen(true)}
       >
         <span className='sr-only'>Open sidebar</span>
         <img src={hamburgerIcon} className='h-6 w-6' aria-hidden='true' />
       </button>
-      <div className='flex-1 flex gap-3 md:gap-4 justify-between md:justify-start'>
+      <div className='flex-1 flex gap-3 md:gap-4 px-2 md:px-0 justify-between md:justify-start'>
         <div className='md:flex-1 flex flex-row items-center gap-1 md:gap-4'>
           <p className='tex-sm md:text-base text-[#1A181E]'>Payments</p>
           <div className='flex items-center gap-1.5'>
